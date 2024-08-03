@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Generation</title>
+</head>
+<body>
+    <h1>Text Generation</h1>
+    <form method="post">
+        <textarea name="content" rows="4" cols="50" placeholder="Enter your prompt here..."></textarea><br>
+        <button type="submit">Generate</button>
+    </form>
+    {% if query %}
+    <h2>Prompt</h2>
+    <p>{{ query }}</p>
+    <h2>Generated Text</h2>
+    <p>{{ response }}</p>
+    {% endif %}
+</body>
+</html>
